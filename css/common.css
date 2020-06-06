@@ -1,0 +1,40 @@
+/* 公共样式 */
+@charset "UTF-8";
+* {
+   padding: 0;
+   margin: 0;
+   font-size: 24px;
+}
+body{
+    width: 1920px;
+    height: 100%;
+    margin: auto;
+}
+ul li,ol li {
+    list-style: none;
+}
+a{
+   text-decoration: none;
+   color: #fff;
+}
+table {
+    /* 细线边框 */
+    border-collapse: collapse;
+}
+em,strong,b,i {
+    font-style: normal;
+    font-weight: 400;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+
+    
+
+}
+img {
+    /* ie8下蓝色边框 */
+    border:none;
+    /* 取消图片下间隙 */
+    vertical-align: middle;
+}

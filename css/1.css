@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+/* 整体的大背景 */
+.login {
+  position: relative;
+  width: 1900px;
+  height: 1194px;
+  background-image: url("../images/u0.png");
+  background-size: 1900px 1194px;
+}
+/* logo区域 */
+.login .zb {
+  position: absolute;
+  left: 99px;
+  top: 19px;
+  width: 576px;
+  height: 182px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+.login .zb p:first-child {
+  height: 132px;
+  font-size: 100px;
+  line-height: 132px;
+}
+.login .zb p:last-child {
+  height: 95px;
+  font-size: 72px;
+  line-height: 95px;
+}
+.login .logo img {
+  position: absolute;
+  left: 99px;
+  top: 19px;
+  width: 98px;
+  height: 98px;
+}
+/* 登录 */
+.login .submit {
+  position: absolute;
+  top: 117px;
+  left: 1285px;
+  width: 480px;
+  height: 395px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.298039215686275);
+}
+.login .submit .password,
+.login .submit .note {
+  position: absolute;
+  top: 43px;
+  width: 123px;
+  height: 46px;
+  background-color: rgba(2, 167, 240, 1);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  line-height: 47px;
+  color: rgba(202, 249, 130, 0.996078431372549);
+  cursor: pointer;
+}
+.login .submit .password {
+  left: 106px;
+}
+.login .submit .note {
+  left: 252px;
+}
+.login .submit .password:hover,
+.login .submit .note:hover {
+  color: rgb(0, 191, 191);
+}
+.login .submit form input {
+  position: absolute;
+  left: 78px;
+  width: 320px;
+  height: 40px;
+  padding: 3px 2px 3px 2px;
+  border: transparent;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.login .submit form input:first-child {
+  top: 121px;
+}
+.login .submit form input:nth-child(2) {
+  top: 186px;
+}
+.login .submit form input:nth-child(3) {
+  width: 201px;
+  top: 244px;
+}
+.login .submit form .two {
+  position: absolute;
+  top: 310px;
+  left: 138px;
+  width: 201px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(112, 182, 3, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login .submit .forget {
+  position: absolute;
+  top: 360px;
+  left: 334px;
+  width: 64px;
+  height: 22px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.login .submit .two::after{
+    content: "2";
+    left: 183px;
+}
+.login .submit .forget::after{
+    content: "3";
+    left: 43px;
+}
+.login .submit .two::after,
+.login .submit .forget::after {
+  position: absolute;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+  background-color: yellow;
+}
+/* 底部版权 */
+.login .footer {
+  position: absolute;
+  top: 1051px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.login .footer .copy {
+  margin-bottom: 22px;
+}

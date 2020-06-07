@@ -1,0 +1,1 @@
+"use strict";var note=document.querySelector(".note"),password=document.querySelector(".password"),formNone=document.querySelector(".block"),formBlock=document.querySelector(".none");note.onclick=function(){formNone.style.display="none",formBlock.style.display="block"},password.onclick=function(){formBlock.style.display="none",formNone.style.display="block"};

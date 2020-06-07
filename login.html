@@ -2,34 +2,60 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/login.css">
-  <link rel="shortcut icon" href="resources/images/favicon_play.ico">
-  <title>考吧后台管理登录页面</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>考吧后台管理登录页</title>
+  <link rel="shortcut icon" href="./favicon_play.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/login.css" />
 </head>
 
 <body>
-  <div class="login-img">
-    <div class="login-box">
-      <div class="login-left">
-        <div class="login-font">
-          <p><img src="images/u136.png" alt="" width="98px" height="98px"></p>
-          <p>职</p>
-          <p>吧</p>
-
-        </div>
-        <div class="login-p">
-          <p>管理控制后台登录</p>
-        </div>
+  <div class="login">
+    <!-- logo -->
+    <div class="zb">
+      <p>职&nbsp&nbsp吧</p>
+      <p>管理控制后台登录</p>
+    </div>
+    <div class="logo">
+      <img src="images/u30.png" alt="" />
+    </div>
+    <!-- 登录 -->
+    <div class="submit">
+      <div class="password">密码登录</div>
+      <div class="note">短信登录</div>
+      <!-- 密码登录 -->
+      <div class="block">
+        <img src="./images/u115.svg" alt="" class="id">
+        <img src="./images/u116.svg" alt="" class="pass">
+        <img src="./images/u123.svg" alt="" class="code">
+        <form action="">
+          <input type="text" placeholder="请输入账号">
+          <input type="password
+              " placeholder="请输入密码">
+          <input type="text" placeholder="请输右侧验证码">
+          <div class="two">登录</div>
+        </form>
+        <div class="forget">忘记密码</div>
       </div>
-
-      <div class="login-model">
-
+      <!-- 短信登录 -->
+      <div class="none">
+        <img src="./images/u127.svg" alt="" class="phone">
+        <img src="./images/u131.png" alt="" class="verification">
+        <form action="">
+          <input type="text" placeholder="手机号">
+          <input type="text" placeholder="验证码">
+          <button>获取验证码</button>
+          <div class="one">登录</div>
+        </form>
       </div>
-
+    </div>
+    <!-- 底部版权 -->
+    <div class="footer">
+      <p class="copy">© 杭州德彦楠卡科技有限公司版权所有</p>
+      <p class="prepare"> 浙ICP备19049246号-1</p>
     </div>
   </div>
+  <script src="./js/login.js"></script>
 </body>
 
 </html>

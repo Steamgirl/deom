@@ -1,55 +1,245 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
 }
-
-.login-img {
-    width: 100%;
-    height: 1000px;
-    background: url("../images/u0.png");
-    background-size: 100% 100%;
+/* 整体的大背景 */
+.login {
+  position: relative;
+  width: 100%;
+  height: 1194px;
+  background-image: url("../images/u0.png");
+  background-size: 1900px 1194px;
 }
-
-.login-box {
-    width: 90%;
-    height: 700px;
-    margin: auto;
-    display: flex;
-    position: relative;
+/* logo区域 */
+.login .zb {
+  position: absolute;
+  left: 99px;
+  top: 19px;
+  width: 576px;
+  height: 182px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
 }
-
-.login-left {
-    width: 490px;
-    height: 200px;
-    margin-top: 20px;
+.login .zb p:first-child {
+  height: 132px;
+  font-size: 100px;
+  line-height: 132px;
 }
-
-.login-font {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    line-height: 100px;
+.login .zb p:last-child {
+  height: 95px;
+  font-size: 72px;
+  line-height: 95px;
 }
-
-.login-font p {
-    width: 98px;
-    height: 98px;
-    font: 100px "楷体";
-    margin-right: 98px;
-    text-align: center;
-    color: #fff;
+.login .logo img {
+  position: absolute;
+  left: 99px;
+  top: 19px;
+  width: 98px;
+  height: 98px;
 }
-
-.login-p {
-    font: bold 60px "宋体";
-    color: #fff;
+/* 登录 */
+.login .submit {
+  position: absolute;
+  top: 117px;
+  left: 60%;
+  width: 480px;
+  height: 395px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.298039215686275);
 }
-.login-model {
-    width: 480px;
-    height: 395px;
-    background: palevioletred;
-    position: absolute;
-    border-radius: 10px;
-    right: 0;
-    top: 50px;
+.login .submit .password,
+.login .submit .note {
+  position: absolute;
+  top: 43px;
+  width: 123px;
+  height: 46px;
+  background-color: rgba(2, 167, 240, 1);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  line-height: 47px;
+  color: rgba(202, 249, 130, 0.996078431372549);
+  cursor: pointer;
+}
+.login .submit .password {
+  left: 106px;
+}
+.login .submit .note {
+  left: 252px;
+}
+.login .submit .password:hover,
+.login .submit .note:hover {
+  color: rgb(0, 191, 191);
+}
+.login .submit form input {
+  position: absolute;
+  left: 78px;
+  width: 320px;
+  height: 40px;
+  padding: 3px 2px 3px 2px;
+  border: transparent;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+/* 密码登录 */
+.login .submit form input:first-child {
+  top: 121px;
+}
+.login .submit form input:nth-child(2) {
+  top: 186px;
+}
+.login .submit form input:nth-child(3) {
+  width: 201px;
+  top: 244px;
+}
+.login .submit .block .id{
+  position: absolute;
+  top: 130px;
+  left: 39px;
+}
+.login .submit .block .pass{
+  position: absolute;
+  top: 192px;
+  left: 39px;
+}
+.login .submit .block .code{
+  position: absolute;
+  top: 252px;
+  left: 39px;
+}
+.login .submit form .two {
+  position: absolute;
+  top: 310px;
+  left: 138px;
+  width: 201px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(112, 182, 3, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login .submit .forget {
+  position: absolute;
+  top: 360px;
+  left: 334px;
+  width: 64px;
+  height: 22px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.login .submit .two::after{
+    content: "2";
+    left: 183px;
+}
+.login .submit .forget::after{
+    content: "3";
+    left: 43px;
+}
+.login .submit .two::after,
+.login .submit .forget::after {
+  position: absolute;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #000;
+  background-color: yellow;
+}
+/* 短信登录 */
+.login .none{
+  display: none;
+}
+.login .none form input:first-child{
+  position: absolute;
+  top: 127px;
+  left:56px;
+  width: 368px;
+  height: 40px;
+  text-indent: 2.5em;
+}
+.login .none form input:nth-child(2){
+  position: absolute;
+  top: 190px;
+  left:56px;
+  width: 245px;
+  height: 40px;
+  text-indent: 2.5em;
+  color:rgba(0, 0, 0, 0.247058823529412)
+}
+.login .none .phone{
+  position: absolute;
+  top: 135px;
+  left: 68px;
+  width: 15px;
+  height: 25px;
+}
+.login .none .verification{
+  position: absolute;
+  top: 203px;
+  left: 68px;
+  width: 16px;
+  height: 16px;
+}
+.login .none form button{
+  position: absolute;
+  top:190px;
+  left: 311px;
+  width: 112px;
+  height: 40px;
+  color: rgba(0,0,0,0.64);
+  font-weight: 400;
+  border-radius: 5px;
+  border:transparent;
+}
+.login .none form .one{
+  position: absolute;
+  top:292px;
+  left: 106px;
+  width: 256px;
+  height: 40px;
+  color:#fff;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(112, 182, 3, 1);
+  border-radius: 5px;
+}
+.login .none .one::after{
+  content: "1";
+  left: 236px;
+}
+.login .none button::after{
+  content: "4";
+  left: 93px;
+}
+.login .none .one::after,
+.login .none button::after {
+position: absolute;
+top: -8px;
+width: 14px;
+height: 14px;
+line-height: 14px;
+font-size: 10px;
+font-weight: bold;
+color: #000;
+background-color: yellow;
+}
+/* 底部版权 */
+.login .footer {
+  position: absolute;
+  top: 1051px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.login .footer .copy {
+  margin-bottom: 22px;
 }
